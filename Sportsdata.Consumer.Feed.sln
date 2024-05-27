@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32407.343
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1D67016E-F942-4897-9A1E-5F0F21FEB449}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yaml = docker-compose.yaml
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sportsdata.Consumer.Common", "Sportsdata.Consumer.Common\Sportsdata.Consumer.Common.csproj", "{A936B587-7106-4DD0-9203-2DDFC46256A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sportsdata.Consumer.Feed", "Sportsdata.Consumer.Feed\Sportsdata.Consumer.Feed.csproj", "{14C8AAF6-0492-48A4-99BE-E4FB78374321}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A936B587-7106-4DD0-9203-2DDFC46256A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A936B587-7106-4DD0-9203-2DDFC46256A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A936B587-7106-4DD0-9203-2DDFC46256A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A936B587-7106-4DD0-9203-2DDFC46256A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14C8AAF6-0492-48A4-99BE-E4FB78374321}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14C8AAF6-0492-48A4-99BE-E4FB78374321}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14C8AAF6-0492-48A4-99BE-E4FB78374321}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14C8AAF6-0492-48A4-99BE-E4FB78374321}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D8FA55E9-B8C3-4F24-B29F-A964E16A14AA}
+	EndGlobalSection
+EndGlobal

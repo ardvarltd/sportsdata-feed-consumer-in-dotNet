@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+  events.feed:
+    build:
+      context: .
+      dockerfile: Sportsdata.Consumer.Feed/Dockerfile
+    restart: on-failure
+    environment:
+        PROFILE: Event
+        ASPNETCORE_ENVIRONMENT: Prod
+    volumes:
+      - ./Sportsdata.Consumer.Feed/appsettings.json:/app/appsettings.json
+
+  markets.feed:
+    build:
+      context: .
+      dockerfile: Sportsdata.Consumer.Feed/Dockerfile
+    restart: on-failure
+    environment:
+        PROFILE: Market
+        ASPNETCORE_ENVIRONMENT: Prod
+    volumes:
+      - ./Sportsdata.Consumer.Feed/appsettings.json:/app/appsettings.json
+
+  settlements.feed:
+    build:
+      context: .
+      dockerfile: Sportsdata.Consumer.Feed/Dockerfile
+    restart: on-failure
+    environment:
+        PROFILE: Settlement
+        ASPNETCORE_ENVIRONMENT: Prod
+    volumes:
+      - ./Sportsdata.Consumer.Feed/appsettings.json:/app/appsettings.json

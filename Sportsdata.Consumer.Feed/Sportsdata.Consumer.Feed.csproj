@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>dotnet-Sportsdata.Consumer.Feed-A168C313-991F-444D-B92F-2D50118A940F</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Confluent.Kafka" Version="1.8.2" />
+    <PackageReference Include="Confluent.SchemaRegistry" Version="1.8.2" />
+    <PackageReference Include="Confluent.SchemaRegistry.Serdes.Json" Version="1.8.2" />
+    <PackageReference Include="Confluent.SchemaRegistry.Serdes.Avro" Version="1.8.2" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.1" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.14.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Sportsdata.Consumer.Common\Sportsdata.Consumer.Common.csproj" />
+  </ItemGroup>
+</Project>
