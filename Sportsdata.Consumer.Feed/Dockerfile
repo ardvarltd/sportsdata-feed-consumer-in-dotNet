@@ -13,9 +13,6 @@ RUN dotnet build "Sportsdata.Consumer.Feed.csproj" -c Release -o /app/build
 FROM build AS publish
 RUN dotnet publish "Sportsdata.Consumer.Feed.csproj" -c Release -o /app/publish
 
-ENV SETTINGS "asd"
-ENV WORKER	"asda"
-
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
