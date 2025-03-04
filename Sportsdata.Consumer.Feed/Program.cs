@@ -20,6 +20,30 @@ IHost host = Host.CreateDefaultBuilder(args)
             case "Enumeration":
                 InjectSettings<EnumerationWorker>(hostContext, services, new EnumerationSettings());
                 break;
+            case "Country":
+                InjectSettings<CountryWorker>(hostContext, services, new CountrySettings());
+                break;
+            case "GamePeriod":
+                InjectSettings<GamePeriodWorker>(hostContext, services, new GamePeriodSettings());
+                break;
+            case "League":
+                InjectSettings<LeagueWorker>(hostContext, services, new LeagueSettings());
+                break;
+            case "LineEntity":
+                InjectSettings<LineEntityWorker>(hostContext, services, new LineEntitySettings());
+                break;
+            case "MarketLine":
+                InjectSettings<MarketLineWorker>(hostContext, services, new MarketLineSettings());
+                break;
+            case "MarketType":
+                InjectSettings<MarketTypeWorker>(hostContext, services, new MarketTypeSettings());
+                break;
+            case "Sport":
+                InjectSettings<SportWorker>(hostContext, services, new SportSettings());
+                break;
+            case "Team":
+                InjectSettings<TeamWorker>(hostContext, services, new TeamSettings());
+                break;
             default:
                 break;
         }

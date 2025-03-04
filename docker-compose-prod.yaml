@@ -1,4 +1,3 @@
-version: '3.8'
 
 services:
   events.feed:
@@ -44,3 +43,83 @@ services:
       ASPNETCORE_ENVIRONMENT: Prod
     volumes:
       - ./Sportsdata.Consumer.Feed/appsettings.json:/app/appsettings.json
+  countries.feed:
+    build:
+      context: .
+      dockerfile: Sportsdata.Consumer.Feed/Dockerfile
+    restart: on-failure
+    environment:
+      PROFILE: Country
+      ASPNETCORE_ENVIRONMENT: Prod
+    volumes:
+      - ./Sportsdata.Consumer.Feed/appsettings.json:/app/appsettings.json
+  game-periods.feed:
+    build:
+      context: .
+      dockerfile: Sportsdata.Consumer.Feed/Dockerfile
+    restart: on-failure
+    environment:
+      PROFILE: GamePeriod
+      ASPNETCORE_ENVIRONMENT: Prod
+    volumes:
+      - ./Sportsdata.Consumer.Feed/appsettings.json:/app/appsettings.json
+  leagues.feed:
+    build:
+      context: .
+      dockerfile: Sportsdata.Consumer.Feed/Dockerfile
+    restart: on-failure
+    environment:
+      PROFILE: League
+      ASPNETCORE_ENVIRONMENT: Prod
+    volumes:
+      - ./Sportsdata.Consumer.Feed/appsettings.json:/app/appsettings.json
+  line-entities.feed:
+    build:
+      context: .
+      dockerfile: Sportsdata.Consumer.Feed/Dockerfile
+    restart: on-failure
+    environment:
+      PROFILE: LineEntity
+      ASPNETCORE_ENVIRONMENT: Prod
+    volumes:
+      - ./Sportsdata.Consumer.Feed/appsettings.json:/app/appsettings.json
+  market-lines.feed:
+    build:
+      context: .
+      dockerfile: Sportsdata.Consumer.Feed/Dockerfile
+    restart: on-failure
+    environment:
+      PROFILE: MarketLine
+      ASPNETCORE_ENVIRONMENT: Prod
+    volumes:
+      - ./Sportsdata.Consumer.Feed/appsettings.json:/app/appsettings.json
+  market-types.feed:
+    build:
+      context: .
+      dockerfile: Sportsdata.Consumer.Feed/Dockerfile
+    restart: on-failure
+    environment:
+      PROFILE: MarketType
+      ASPNETCORE_ENVIRONMENT: Prod
+    volumes:
+      - ./Sportsdata.Consumer.Feed/appsettings.json:/app/appsettings.json                        
+  sports.feed:
+    build:
+      context: .
+      dockerfile: Sportsdata.Consumer.Feed/Dockerfile
+    restart: on-failure
+    environment:
+      PROFILE: Sport
+      ASPNETCORE_ENVIRONMENT: Prod
+    volumes:
+      - ./Sportsdata.Consumer.Feed/appsettings.json:/app/appsettings.json  
+  teams.feed:
+    build:
+      context: .
+      dockerfile: Sportsdata.Consumer.Feed/Dockerfile
+    restart: on-failure
+    environment:
+      PROFILE: Team
+      ASPNETCORE_ENVIRONMENT: Prod
+    volumes:
+      - ./Sportsdata.Consumer.Feed/appsettings.json:/app/appsettings.json          
