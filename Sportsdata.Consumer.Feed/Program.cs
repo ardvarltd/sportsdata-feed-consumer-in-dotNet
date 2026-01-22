@@ -17,6 +17,9 @@ IHost host = Host.CreateDefaultBuilder(args)
             case "Settlement":
                 InjectSettings<SettlementWorker>(hostContext, services, new SettlementSettings());
                 break;
+            case "BrandedSettlement":
+                InjectSettings<BrandedSettlementWorker>(hostContext, services, new BrandedSettlementSettings());
+                break;
             case "Enumeration":
                 InjectSettings<EnumerationWorker>(hostContext, services, new EnumerationSettings());
                 break;
