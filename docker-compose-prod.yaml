@@ -33,6 +33,17 @@ services:
     volumes:
       - ./Sportsdata.Consumer.Feed/appsettings.json:/app/appsettings.json
 
+  brandedsettlements.feed:
+    build:
+      context: .
+      dockerfile: Sportsdata.Consumer.Feed/Dockerfile
+    restart: on-failure
+    environment:
+        PROFILE: BrandedSettlement
+        ASPNETCORE_ENVIRONMENT: Prod
+    volumes:
+      - ./Sportsdata.Consumer.Feed/appsettings.json:/app/appsettings.json
+
   enumerations.feed:
     build:
       context: .

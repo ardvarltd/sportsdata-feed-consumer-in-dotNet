@@ -36,6 +36,10 @@ B2B Kafka feed
       "SettlementSettings": {
         "Topic": ""
       }
+
+      "BrandedSettlementSettings": {
+      "Topic": ""
+      }
   
 # Launch container
 docker-compose run --rm <service-name> bash
